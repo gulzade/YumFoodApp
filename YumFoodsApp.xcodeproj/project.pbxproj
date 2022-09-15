@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC35674A28D30D60008FDFFE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35674928D30D60008FDFFE /* DetailViewController.swift */; };
+		FC35674C28D30FEE008FDFFE /* CartFoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35674B28D30FEE008FDFFE /* CartFoods.swift */; };
+		FC35674E28D31006008FDFFE /* CartFoodsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35674D28D31006008FDFFE /* CartFoodsResponse.swift */; };
+		FC35675028D31058008FDFFE /* FoodDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35674F28D31058008FDFFE /* FoodDetailProtocol.swift */; };
+		FC35675228D31149008FDFFE /* FoodDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35675128D31149008FDFFE /* FoodDetailPresenter.swift */; };
+		FC35675428D3124A008FDFFE /* FoodDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35675328D3124A008FDFFE /* FoodDetailInteractor.swift */; };
+		FC35675628D31436008FDFFE /* FoodDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35675528D31436008FDFFE /* FoodDetailRouter.swift */; };
+		FC35675828D34101008FDFFE /* CartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35675728D34101008FDFFE /* CartProtocols.swift */; };
+		FC724F6F28D2A304007277E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724F6E28D2A304007277E6 /* AppDelegate.swift */; };
+		FC724F7128D2A304007277E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724F7028D2A304007277E6 /* SceneDelegate.swift */; };
+		FC724F7328D2A304007277E6 /* HompageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724F7228D2A304007277E6 /* HompageViewController.swift */; };
+		FC724F7628D2A304007277E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC724F7428D2A304007277E6 /* Main.storyboard */; };
+		FC724F7828D2A305007277E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC724F7728D2A305007277E6 /* Assets.xcassets */; };
+		FC724F7B28D2A305007277E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC724F7928D2A305007277E6 /* LaunchScreen.storyboard */; };
+		FC724F8328D2A80E007277E6 /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724F8228D2A80E007277E6 /* Foods.swift */; };
+		FC724F8628D2A94A007277E6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FC724F8528D2A94A007277E6 /* Alamofire */; };
+		FC724F8928D2A9E3007277E6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FC724F8828D2A9E3007277E6 /* Kingfisher */; };
+		FC724F9F28D2B103007277E6 /* HomePageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724F9E28D2B103007277E6 /* HomePageProtocols.swift */; };
+		FC724FA128D2B45F007277E6 /* HomePageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724FA028D2B45F007277E6 /* HomePageRouter.swift */; };
+		FC724FA328D2B4AD007277E6 /* HomePageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724FA228D2B4AD007277E6 /* HomePageInteractor.swift */; };
+		FC724FA528D2B850007277E6 /* FoodsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724FA428D2B850007277E6 /* FoodsResponse.swift */; };
+		FC724FA728D2B952007277E6 /* HomePagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724FA628D2B952007277E6 /* HomePagePresenter.swift */; };
+		FC724FAC28D2C3A9007277E6 /* FoodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724FAB28D2C3A9007277E6 /* FoodsCollectionViewCell.swift */; };
+		FC724FAE28D2E6E0007277E6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC724FAD28D2E6E0007277E6 /* WelcomeViewController.swift */; };
+		FC96268C28D379BD00FECDAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC96268B28D379BD00FECDAD /* LoginViewController.swift */; };
+		FC96268F28D37C7300FECDAD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FC96268E28D37C7300FECDAD /* FirebaseAuth */; };
+		FC96269128D37C7300FECDAD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FC96269028D37C7300FECDAD /* FirebaseDatabase */; };
+		FC96269328D37C7300FECDAD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FC96269228D37C7300FECDAD /* FirebaseFirestore */; };
+		FC96269528D3811200FECDAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC96269428D3811200FECDAD /* GoogleService-Info.plist */; };
+		FCE8CB8C28D3446000FA8CA2 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8CB8B28D3446000FA8CA2 /* CartPresenter.swift */; };
+		FCE8CB8E28D3448000FA8CA2 /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8CB8D28D3448000FA8CA2 /* CartInteractor.swift */; };
+		FCE8CB9028D344F300FA8CA2 /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8CB8F28D344F300FA8CA2 /* CartRouter.swift */; };
+		FCE8CB9328D3477500FA8CA2 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8CB9228D3477500FA8CA2 /* CartTableViewCell.swift */; };
+		FCE8CB9528D3523600FA8CA2 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8CB9428D3523600FA8CA2 /* CartViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC35674928D30D60008FDFFE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FC35674B28D30FEE008FDFFE /* CartFoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartFoods.swift; sourceTree = "<group>"; };
+		FC35674D28D31006008FDFFE /* CartFoodsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartFoodsResponse.swift; sourceTree = "<group>"; };
+		FC35674F28D31058008FDFFE /* FoodDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailProtocol.swift; sourceTree = "<group>"; };
+		FC35675128D31149008FDFFE /* FoodDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailPresenter.swift; sourceTree = "<group>"; };
+		FC35675328D3124A008FDFFE /* FoodDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailInteractor.swift; sourceTree = "<group>"; };
+		FC35675528D31436008FDFFE /* FoodDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailRouter.swift; sourceTree = "<group>"; };
+		FC35675728D34101008FDFFE /* CartProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProtocols.swift; sourceTree = "<group>"; };
+		FC724F6B28D2A304007277E6 /* YumFoodsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YumFoodsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC724F6E28D2A304007277E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC724F7028D2A304007277E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FC724F7228D2A304007277E6 /* HompageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HompageViewController.swift; sourceTree = "<group>"; };
+		FC724F7528D2A304007277E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC724F7728D2A305007277E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC724F7A28D2A305007277E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC724F7C28D2A305007277E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC724F8228D2A80E007277E6 /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
+		FC724F9E28D2B103007277E6 /* HomePageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageProtocols.swift; sourceTree = "<group>"; };
+		FC724FA028D2B45F007277E6 /* HomePageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageRouter.swift; sourceTree = "<group>"; };
+		FC724FA228D2B4AD007277E6 /* HomePageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageInteractor.swift; sourceTree = "<group>"; };
+		FC724FA428D2B850007277E6 /* FoodsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsResponse.swift; sourceTree = "<group>"; };
+		FC724FA628D2B952007277E6 /* HomePagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePagePresenter.swift; sourceTree = "<group>"; };
+		FC724FAB28D2C3A9007277E6 /* FoodsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC724FAD28D2E6E0007277E6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		FC96268B28D379BD00FECDAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC96269428D3811200FECDAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCE8CB8B28D3446000FA8CA2 /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
+		FCE8CB8D28D3448000FA8CA2 /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
+		FCE8CB8F28D344F300FA8CA2 /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
+		FCE8CB9228D3477500FA8CA2 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		FCE8CB9428D3523600FA8CA2 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC724F6828D2A304007277E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC724F8928D2A9E3007277E6 /* Kingfisher in Frameworks */,
+				FC96268F28D37C7300FECDAD /* FirebaseAuth in Frameworks */,
+				FC96269128D37C7300FECDAD /* FirebaseDatabase in Frameworks */,
+				FC96269328D37C7300FECDAD /* FirebaseFirestore in Frameworks */,
+				FC724F8628D2A94A007277E6 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC724F6228D2A304007277E6 = {
+			isa = PBXGroup;
+			children = (
+				FC724F6D28D2A304007277E6 /* YumFoodsApp */,
+				FC724F6C28D2A304007277E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC724F6C28D2A304007277E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC724F6B28D2A304007277E6 /* YumFoodsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC724F6D28D2A304007277E6 /* YumFoodsApp */ = {
+			isa = PBXGroup;
+			children = (
+				FC724F6E28D2A304007277E6 /* AppDelegate.swift */,
+				FC724F7028D2A304007277E6 /* SceneDelegate.swift */,
+				FCE8CB9628D3680E00FA8CA2 /* WelcomScreen */,
+				FC724FA828D2BE63007277E6 /* Login-Module */,
+				FC724F9228D2ABEA007277E6 /* Entity */,
+				FC724F8C28D2AAA2007277E6 /* Cart-Module */,
+				FC724F8B28D2AA91007277E6 /* Detail-Module */,
+				FC724F8A28D2AA5B007277E6 /* HomePage-module */,
+				FC724F7428D2A304007277E6 /* Main.storyboard */,
+				FC724F7728D2A305007277E6 /* Assets.xcassets */,
+				FC724F7928D2A305007277E6 /* LaunchScreen.storyboard */,
+				FC96269428D3811200FECDAD /* GoogleService-Info.plist */,
+				FC724F7C28D2A305007277E6 /* Info.plist */,
+			);
+			path = YumFoodsApp;
+			sourceTree = "<group>";
+		};
+		FC724F8A28D2AA5B007277E6 /* HomePage-module */ = {
+			isa = PBXGroup;
+			children = (
+				FC724F9328D2AC15007277E6 /* collectionView */,
+				FC724F8F28D2AB99007277E6 /* protocols */,
+				FC724F9128D2ABAC007277E6 /* router */,
+				FC724F8E28D2AB45007277E6 /* interactor */,
+				FC724F9028D2ABA1007277E6 /* presenter */,
+				FC724F8D28D2AB39007277E6 /* View */,
+			);
+			path = "HomePage-module";
+			sourceTree = "<group>";
+		};
+		FC724F8B28D2AA91007277E6 /* Detail-Module */ = {
+			isa = PBXGroup;
+			children = (
+				FC724F9828D2AC5E007277E6 /* protocols */,
+				FC724F9728D2AC55007277E6 /* router */,
+				FC724F9628D2AC4B007277E6 /* interactor */,
+				FC724F9528D2AC44007277E6 /* presenter */,
+				FC724F9428D2AC3A007277E6 /* view */,
+			);
+			path = "Detail-Module";
+			sourceTree = "<group>";
+		};
+		FC724F8C28D2AAA2007277E6 /* Cart-Module */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8CB9128D3475B00FA8CA2 /* Tableview */,
+				FC724F9D28D2ACA6007277E6 /* protocols */,
+				FC724F9C28D2AC9C007277E6 /* router */,
+				FC724F9B28D2AC8A007277E6 /* interactor */,
+				FC724F9A28D2AC81007277E6 /* presenter */,
+				FC724F9928D2AC7B007277E6 /* view */,
+			);
+			path = "Cart-Module";
+			sourceTree = "<group>";
+		};
+		FC724F8D28D2AB39007277E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC724F7228D2A304007277E6 /* HompageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC724F8E28D2AB45007277E6 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FC724FA228D2B4AD007277E6 /* HomePageInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		FC724F8F28D2AB99007277E6 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC724F9E28D2B103007277E6 /* HomePageProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FC724F9028D2ABA1007277E6 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC724FA628D2B952007277E6 /* HomePagePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		FC724F9128D2ABAC007277E6 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				FC724FA028D2B45F007277E6 /* HomePageRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		FC724F9228D2ABEA007277E6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FC724F8228D2A80E007277E6 /* Foods.swift */,
+				FC724FA428D2B850007277E6 /* FoodsResponse.swift */,
+				FC35674B28D30FEE008FDFFE /* CartFoods.swift */,
+				FC35674D28D31006008FDFFE /* CartFoodsResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FC724F9328D2AC15007277E6 /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FC724FAB28D2C3A9007277E6 /* FoodsCollectionViewCell.swift */,
+			);
+			path = collectionView;
+			sourceTree = "<group>";
+		};
+		FC724F9428D2AC3A007277E6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FC35674928D30D60008FDFFE /* DetailViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FC724F9528D2AC44007277E6 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC35675128D31149008FDFFE /* FoodDetailPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		FC724F9628D2AC4B007277E6 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FC35675328D3124A008FDFFE /* FoodDetailInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		FC724F9728D2AC55007277E6 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				FC35675528D31436008FDFFE /* FoodDetailRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		FC724F9828D2AC5E007277E6 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC35674F28D31058008FDFFE /* FoodDetailProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FC724F9928D2AC7B007277E6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8CB9428D3523600FA8CA2 /* CartViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FC724F9A28D2AC81007277E6 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8CB8B28D3446000FA8CA2 /* CartPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		FC724F9B28D2AC8A007277E6 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8CB8D28D3448000FA8CA2 /* CartInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		FC724F9C28D2AC9C007277E6 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8CB8F28D344F300FA8CA2 /* CartRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		FC724F9D28D2ACA6007277E6 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC35675728D34101008FDFFE /* CartProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FC724FA828D2BE63007277E6 /* Login-Module */ = {
+			isa = PBXGroup;
+			children = (
+				FC96268B28D379BD00FECDAD /* LoginViewController.swift */,
+			);
+			path = "Login-Module";
+			sourceTree = "<group>";
+		};
+		FCE8CB9128D3475B00FA8CA2 /* Tableview */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8CB9228D3477500FA8CA2 /* CartTableViewCell.swift */,
+			);
+			path = Tableview;
+			sourceTree = "<group>";
+		};
+		FCE8CB9628D3680E00FA8CA2 /* WelcomScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FC724FAD28D2E6E0007277E6 /* WelcomeViewController.swift */,
+			);
+			path = WelcomScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC724F6A28D2A304007277E6 /* YumFoodsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC724F7F28D2A305007277E6 /* Build configuration list for PBXNativeTarget "YumFoodsApp" */;
+			buildPhases = (
+				FC724F6728D2A304007277E6 /* Sources */,
+				FC724F6828D2A304007277E6 /* Frameworks */,
+				FC724F6928D2A304007277E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YumFoodsApp;
+			packageProductDependencies = (
+				FC724F8528D2A94A007277E6 /* Alamofire */,
+				FC724F8828D2A9E3007277E6 /* Kingfisher */,
+				FC96268E28D37C7300FECDAD /* FirebaseAuth */,
+				FC96269028D37C7300FECDAD /* FirebaseDatabase */,
+				FC96269228D37C7300FECDAD /* FirebaseFirestore */,
+			);
+			productName = YumFoodsApp;
+			productReference = FC724F6B28D2A304007277E6 /* YumFoodsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC724F6328D2A304007277E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FC724F6A28D2A304007277E6 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = FC724F6628D2A304007277E6 /* Build configuration list for PBXProject "YumFoodsApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC724F6228D2A304007277E6;
+			packageReferences = (
+				FC724F8428D2A94A007277E6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FC724F8728D2A9E3007277E6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FC96268D28D37C7300FECDAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = FC724F6C28D2A304007277E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC724F6A28D2A304007277E6 /* YumFoodsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC724F6928D2A304007277E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC724F7B28D2A305007277E6 /* LaunchScreen.storyboard in Resources */,
+				FC96269528D3811200FECDAD /* GoogleService-Info.plist in Resources */,
+				FC724F7828D2A305007277E6 /* Assets.xcassets in Resources */,
+				FC724F7628D2A304007277E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC724F6728D2A304007277E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC724FA528D2B850007277E6 /* FoodsResponse.swift in Sources */,
+				FC724F7328D2A304007277E6 /* HompageViewController.swift in Sources */,
+				FC724FAE28D2E6E0007277E6 /* WelcomeViewController.swift in Sources */,
+				FC35675628D31436008FDFFE /* FoodDetailRouter.swift in Sources */,
+				FC35674A28D30D60008FDFFE /* DetailViewController.swift in Sources */,
+				FC724F8328D2A80E007277E6 /* Foods.swift in Sources */,
+				FC724F6F28D2A304007277E6 /* AppDelegate.swift in Sources */,
+				FCE8CB9528D3523600FA8CA2 /* CartViewController.swift in Sources */,
+				FC724FAC28D2C3A9007277E6 /* FoodsCollectionViewCell.swift in Sources */,
+				FC35675228D31149008FDFFE /* FoodDetailPresenter.swift in Sources */,
+				FC35674C28D30FEE008FDFFE /* CartFoods.swift in Sources */,
+				FCE8CB8E28D3448000FA8CA2 /* CartInteractor.swift in Sources */,
+				FC724F9F28D2B103007277E6 /* HomePageProtocols.swift in Sources */,
+				FC96268C28D379BD00FECDAD /* LoginViewController.swift in Sources */,
+				FC35675028D31058008FDFFE /* FoodDetailProtocol.swift in Sources */,
+				FC35675828D34101008FDFFE /* CartProtocols.swift in Sources */,
+				FCE8CB9328D3477500FA8CA2 /* CartTableViewCell.swift in Sources */,
+				FCE8CB9028D344F300FA8CA2 /* CartRouter.swift in Sources */,
+				FCE8CB8C28D3446000FA8CA2 /* CartPresenter.swift in Sources */,
+				FC724FA128D2B45F007277E6 /* HomePageRouter.swift in Sources */,
+				FC724F7128D2A304007277E6 /* SceneDelegate.swift in Sources */,
+				FC724FA328D2B4AD007277E6 /* HomePageInteractor.swift in Sources */,
+				FC35674E28D31006008FDFFE /* CartFoodsResponse.swift in Sources */,
+				FC724FA728D2B952007277E6 /* HomePagePresenter.swift in Sources */,
+				FC35675428D3124A008FDFFE /* FoodDetailInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC724F7428D2A304007277E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC724F7528D2A304007277E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC724F7928D2A305007277E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC724F7A28D2A305007277E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC724F7D28D2A305007277E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC724F7E28D2A305007277E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC724F8028D2A305007277E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GF9T6UPWP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YumFoodsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaratas.YumFoodsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC724F8128D2A305007277E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GF9T6UPWP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YumFoodsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaratas.YumFoodsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC724F6628D2A304007277E6 /* Build configuration list for PBXProject "YumFoodsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC724F7D28D2A305007277E6 /* Debug */,
+				FC724F7E28D2A305007277E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC724F7F28D2A305007277E6 /* Build configuration list for PBXNativeTarget "YumFoodsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC724F8028D2A305007277E6 /* Debug */,
+				FC724F8128D2A305007277E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC724F8428D2A94A007277E6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FC724F8728D2A9E3007277E6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		FC96268D28D37C7300FECDAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC724F8528D2A94A007277E6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC724F8428D2A94A007277E6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FC724F8828D2A9E3007277E6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC724F8728D2A9E3007277E6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FC96268E28D37C7300FECDAD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC96268D28D37C7300FECDAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FC96269028D37C7300FECDAD /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC96268D28D37C7300FECDAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		FC96269228D37C7300FECDAD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC96268D28D37C7300FECDAD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FC724F6328D2A304007277E6 /* Project object */;
+}
