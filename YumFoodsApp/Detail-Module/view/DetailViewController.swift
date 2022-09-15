@@ -79,7 +79,7 @@ class DetailViewController: UIViewController {
     @IBAction func addToCartButton(_ sender: Any) {
         if let food = getFood {
             foodDetailPresenterObject?.add(yemekAdi: food.yemek_adi!, yemekResimAdi: food.yemek_resim_adi!, yemekFiyat: Int(food.yemek_fiyat!)!, yemekSiparisAdet: pCount, kullaniciAdi: "gulzade")
-            let alert = UIAlertController(title: "Successful", message: "The product has been successfully added to the cart.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Successfully", message: "The product has been successfully added to the cart.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "ok", style: .default, handler: { (action: UIAlertAction!) in
                 self.dismiss(animated: true, completion: nil)
             }))

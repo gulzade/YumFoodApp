@@ -34,7 +34,7 @@
                                     <color key="baseBackgroundColor" name="butonColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="58G-LK-9Oq" kind="show" id="yV3-tB-3aj"/>
+                                    <segue destination="zbc-qB-oLP" kind="show" id="GS1-6E-ClN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,12 +67,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8NB-iI-niY">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="gulzade" borderStyle="roundedRect" placeholder="User name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8NB-iI-niY">
                                 <rect key="frame" x="61" y="255" width="292" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="nmf-DA-dCE"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -90,28 +89,27 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="loginButton:" destination="zbc-qB-oLP" eventType="touchUpInside" id="v1S-ZF-k51"/>
+                                    <segue destination="58G-LK-9Oq" kind="show" id="w8C-d0-aR8"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eX9-ZD-a54">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@gmail.com" borderStyle="roundedRect" placeholder="Mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eX9-ZD-a54">
                                 <rect key="frame" x="61" y="344" width="292" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="fZv-ix-HeU"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ib-ve-SRw">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test.123" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ib-ve-SRw">
                                 <rect key="frame" x="66" y="439" width="292" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Iea-kk-MSq"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="YumFoods App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vb-kZ-OqB">
-                                <rect key="frame" x="98" y="93" width="219" height="56"/>
+                                <rect key="frame" x="74" y="93" width="279" height="56"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.32699861190000001" blue="0.76059861439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -121,7 +119,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pZ4-lu-1bh" firstAttribute="trailing" secondItem="3Ib-ve-SRw" secondAttribute="trailing" constant="56" id="32y-sr-1gk"/>
-                            <constraint firstItem="3vb-kZ-OqB" firstAttribute="centerX" secondItem="uTs-Ip-LXo" secondAttribute="centerX" id="AP0-Nl-lp5"/>
+                            <constraint firstItem="3vb-kZ-OqB" firstAttribute="centerX" secondItem="uTs-Ip-LXo" secondAttribute="centerX" constant="6.5" id="AP0-Nl-lp5"/>
                             <constraint firstItem="8NB-iI-niY" firstAttribute="trailing" secondItem="eX9-ZD-a54" secondAttribute="trailing" id="Lrx-yS-t3B"/>
                             <constraint firstItem="eX9-ZD-a54" firstAttribute="trailing" secondItem="iMG-bS-m1Z" secondAttribute="trailing" id="UVA-GS-Oor"/>
                             <constraint firstItem="iMG-bS-m1Z" firstAttribute="leading" secondItem="pZ4-lu-1bh" secondAttribute="leading" constant="66" id="XXY-SX-jbB"/>
@@ -129,9 +127,9 @@
                             <constraint firstItem="3Ib-ve-SRw" firstAttribute="leading" secondItem="iMG-bS-m1Z" secondAttribute="leading" id="aHs-HX-s9V"/>
                             <constraint firstItem="pZ4-lu-1bh" firstAttribute="bottom" secondItem="iMG-bS-m1Z" secondAttribute="bottom" constant="100" id="ifE-EA-DPb"/>
                             <constraint firstItem="iMG-bS-m1Z" firstAttribute="top" secondItem="3Ib-ve-SRw" secondAttribute="bottom" constant="229" id="kua-Vb-3WJ"/>
-                            <constraint firstItem="3vb-kZ-OqB" firstAttribute="centerY" secondItem="uTs-Ip-LXo" secondAttribute="centerY" id="lOI-jd-hUi"/>
+                            <constraint firstItem="3vb-kZ-OqB" firstAttribute="centerY" secondItem="uTs-Ip-LXo" secondAttribute="centerY" constant="-327" id="lOI-jd-hUi"/>
                             <constraint firstItem="eX9-ZD-a54" firstAttribute="top" secondItem="8NB-iI-niY" secondAttribute="bottom" constant="55" id="mPG-i8-gl7"/>
-                            <constraint firstItem="8NB-iI-niY" firstAttribute="centerX" secondItem="3vb-kZ-OqB" secondAttribute="centerX" id="uUj-Nh-9ak"/>
+                            <constraint firstItem="8NB-iI-niY" firstAttribute="centerX" secondItem="3vb-kZ-OqB" secondAttribute="centerX" constant="-6.5" id="uUj-Nh-9ak"/>
                             <constraint firstItem="8NB-iI-niY" firstAttribute="leading" secondItem="eX9-ZD-a54" secondAttribute="leading" id="vr2-ks-AXH"/>
                         </constraints>
                     </view>
@@ -144,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wN5-HE-3yz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2435" y="-322"/>
+            <point key="canvasLocation" x="2434.7826086956525" y="-322.09821428571428"/>
         </scene>
         <!--Foods-->
         <scene sceneID="tne-QT-ifu">
