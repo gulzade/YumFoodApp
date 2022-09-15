@@ -1,4 +1,4 @@
-# YumFood
+# YumFoodApp
 
 https://user-images.githubusercontent.com/32436596/190452407-6425747b-9b92-4822-89e6-0a5f048b27e1.mp4
 
